@@ -19,7 +19,7 @@ ou
 Instalação via git clone
 
 ```bash
-git clone
+git clone https://github.com/AndradeKaio/restfullapi.git
 cd cars-api
 
 ```
