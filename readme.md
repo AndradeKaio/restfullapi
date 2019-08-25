@@ -20,7 +20,7 @@ Instalação via git clone
 
 ```bash
 git clone https://github.com/AndradeKaio/restfullapi.git
-cd cars-api
+cd restfullapi
 
 ```
 
@@ -29,9 +29,9 @@ cd cars-api
 Usando docker (Download das imagens pode levar alguns minutos)
 
 ```bash
-cd ~/cars-api
+cd ~/restfullapi
 docker run --rm -v $(pwd):/app composer install
-sudo chown -R $USER:$USER ~/cars-api
+sudo chown -R $USER:$USER ~/restfullapi
 cp .env.example .env
 docker compose-up -d
 docker-compose exec app php artisan key:generate
@@ -40,7 +40,7 @@ docker-compose exec app php artisan key:generate
 Usando Laravel Server
 
 ```bash
-cd ~/cars-api
+cd ~/restfullapi
 composer install
 composer update
 chmod 755 app/storage
